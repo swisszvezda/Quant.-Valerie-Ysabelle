@@ -1,2 +1,2 @@
-# Quant.-Val-rie-Ysabelle
+# Quant.-Valerie-Ysabelle
 Quantitative Methods, Team: Valérie-Ysabelle
