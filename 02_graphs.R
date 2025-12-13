@@ -32,5 +32,9 @@ boxplot(
 mtext("Q6.1.2_1 - In my society, followers are expected to", 
       outer = TRUE,   # für die gesamte Plotfläche
       cex = 1.5,      # Schriftgröße
+<<<<<<< HEAD
       font = 1)       # Fettschrift
+=======
+      font = 4)       # Fettschrift
+>>>>>>> graphs
 
