@@ -1,14 +1,34 @@
 ---
-title: "03_Projektbericht.rmd"
+title: "Arbeitstitel TBD"
 output: html_document
 date: "2025-12-19"
+author: "Valérie S. & Ysabelle M."
+csl: apa.csl
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Test Überschrift
+
+Das ist ein **Test-Text**, der inhaltlich nichts aussagt und nur als *Platzhalter* dient, um die unterschiedlichen Textformatierungen auszuprobieren. Es gibt folgende Möglichkeiten:
+
+- # = Überschriften (Grösse variiert mit Anzahl)
+- *kursiv* , **fett**, ***fett kursiv***
+- Ungeordnete Listen: - Text
+- Geordnete Listen: 1. Text
+- [Linktext](https://example.com)
+- ![Beschreibung](bild.png)
+
+Meine Lieblingsessen in Reihenfolge:
+
+1. Bratwurst mit Pommes & Zwiebelsauce
+2. Lasagne
+3. Gyros
+4. Crepe -> [Was sind eigentlich Crepes](https://de.wikipedia.org/wiki/Cr%C3%AApe)
+
+![So sieht eine leckere Crepe aus](Bilder/testbild_crepes.png)
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
