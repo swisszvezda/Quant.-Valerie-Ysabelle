@@ -25,10 +25,10 @@ gender$Q7.2 <- factor(
 #INTENTION ZUM GRÜNDEN
 #Q4.1.1_2 numerisch machen
 is.numeric(guess$Q4.1.1_2)
-guess$Q4.1.1_2 <- as.numeric(guess$Q4.1.1_2)
+gender$Q4.1.1_2 <- as.numeric(gender$Q4.1.1_2)
 #t-test
 t.test(Q4.1.1_2 ~ Q7.2, data = gender)
-#stat Kennwerte
+#stat Kennwerte t-test
 aggregate(
   Q4.1.1_2 ~ Q7.2,
   data = gender,
@@ -38,6 +38,21 @@ aggregate(
     N = sum(!is.na(x))
   )
 )
+
+#Wilcoxon
+wilcox.test(Q4.1.1_2 ~ Q7.2, data = gender)
+#stat Kennwerte wilcoxon
+aggregate(
+  Q4.1.1_2 ~ Q7.2,
+  data = gender,
+  FUN = function(x) c(
+    Median = median(x, na.rm = TRUE),
+    IQR = IQR(x, na.rm = TRUE),
+    N = sum(!is.na(x))
+  )
+)
+
+
 
 #GESELLSCHAFTLICHE STRUKTUREN
 #variablen numerisch machen
@@ -71,6 +86,24 @@ aggregate(
     M  = mean(x, na.rm = TRUE),
     SD = sd(x, na.rm = TRUE),
     N  = sum(!is.na(x))
+  )
+)
+#Wilcoxon Q6.2_1
+wilcox.test(Q6.1.1_1~ Q7.2, data = gender)
+#Wilcoxon Q6.2_2
+wilcox.test(Q6.1.2_1~ Q7.2, data = gender)
+#Wilcoxon Q6.2_3
+wilcox.test(Q6.1.3_1~ Q7.2, data = gender)
+#Wilcoxon
+wilcox.test(soc_structure_index ~ Q7.2, data = gender)
+#stat Kennwerte Wilcoxon
+aggregate(
+  soc_structure_index ~ Q7.2,
+  data = gender,
+  FUN = function(x) c(
+    Median = median(x, na.rm = TRUE),
+    IQR = IQR(x, na.rm = TRUE),
+    N = sum(!is.na(x))
   )
 )
 
@@ -109,4 +142,24 @@ aggregate(
     N  = sum(!is.na(x))
   )
 )
+
+#Wilcoxon Q6.2_1
+wilcox.test(Q6.2_1~ Q7.2, data = gender)
+#Wilcoxon Q6.2_2
+wilcox.test(Q6.2_2~ Q7.2, data = gender)
+#Wilcoxon Q6.2_3
+wilcox.test(Q6.2_3~ Q7.2, data = gender)
+#Wilcoxon environment_index
+wilcox.test(environment_index ~ Q7.2, data = gender)
+#stat Kennwerte
+aggregate(
+  environment_index ~ Q7.2,
+  data = gender,
+  FUN = function(x) c(
+    Median = median(x, na.rm = TRUE),
+    IQR = IQR(x, na.rm = TRUE),
+    N = sum(!is.na(x))
+  )
+)
+
 
