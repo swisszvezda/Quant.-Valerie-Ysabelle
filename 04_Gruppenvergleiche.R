@@ -9,8 +9,6 @@ t.test(Q2.1_2 ~ Q7.2, data = guess_clean)
 
 wilcox.test(Q2.1_1 ~ Q7.2, data = guess_clean)
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -164,6 +162,3 @@ aggregate(
     N = sum(!is.na(x))
   )
 )
-
-
->>>>>>> bb263de620a006adceca69624b3ab0427b265938
