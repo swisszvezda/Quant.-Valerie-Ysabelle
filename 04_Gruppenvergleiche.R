@@ -65,7 +65,7 @@ is.numeric(gender$Q6.1.2_1)
 is.numeric(gender$Q6.1.3_1)
 
 #Index für gesellschaftliche Strukturen bilden
-gender$soc_structure_index <- rowMeans(
+gender$gesellschaft <- rowMeans(
   gender[, c("Q6.1.1_1", "Q6.1.2_1", "Q6.1.3_1")],
   na.rm = TRUE
 )
@@ -77,11 +77,11 @@ t.test(Q6.1.2_1~ Q7.2, data = gender)
 #t.test Q6.1.3_1
 t.test(Q6.1.3_1~ Q7.2, data = gender)
 
-#t.test soc_structure_index
-t.test(soc_structure_index~ Q7.2, data = gender)
+#t.test gesellschaft
+t.test(gesellschaft~ Q7.2, data = gender)
 #stat Kennwerte
 aggregate(
-  soc_structure_index ~ Q7.2,
+  gesellschaft ~ Q7.2,
   data = gender,
   FUN = function(x) c(
     M  = mean(x, na.rm = TRUE),
@@ -96,10 +96,10 @@ wilcox.test(Q6.1.2_1~ Q7.2, data = gender)
 #Wilcoxon Q6.2_3
 wilcox.test(Q6.1.3_1~ Q7.2, data = gender)
 #Wilcoxon
-wilcox.test(soc_structure_index ~ Q7.2, data = gender)
+wilcox.test(gesellschaft ~ Q7.2, data = gender)
 #stat Kennwerte Wilcoxon
 aggregate(
-  soc_structure_index ~ Q7.2,
+  gesellschaft ~ Q7.2,
   data = gender,
   FUN = function(x) c(
     Median = median(x, na.rm = TRUE),
@@ -119,7 +119,7 @@ is.numeric(gender$Q6.2_2)
 is.numeric(gender$Q6.2_3)
 
 #Index für Reaktion pers. Umfeld bilden
-gender$environment_index <- rowMeans(
+gender$umfeldreaktion <- rowMeans(
   gender[, c("Q6.2_1", "Q6.2_2", "Q6.2_3")],
   na.rm = TRUE
 )
@@ -131,11 +131,11 @@ t.test(Q6.2_2~ Q7.2, data = gender)
 #t.test Q6.2_3
 t.test(Q6.2_3~ Q7.2, data = gender)
 
-#t.test environment_index
-t.test(environment_index ~ Q7.2, data = gender)
+#t.test umfeldreaktion
+t.test(umfeldreaktion ~ Q7.2, data = gender)
 #stat Kennwerte
 aggregate(
-  environment_index ~ Q7.2,
+  umfeldreaktion ~ Q7.2,
   data = gender,
   FUN = function(x) c(
     M  = mean(x, na.rm = TRUE),
@@ -150,11 +150,11 @@ wilcox.test(Q6.2_1~ Q7.2, data = gender)
 wilcox.test(Q6.2_2~ Q7.2, data = gender)
 #Wilcoxon Q6.2_3
 wilcox.test(Q6.2_3~ Q7.2, data = gender)
-#Wilcoxon environment_index
-wilcox.test(environment_index ~ Q7.2, data = gender)
+#Wilcoxon umfeldreaktion
+wilcox.test(umfeldreaktion ~ Q7.2, data = gender)
 #stat Kennwerte
 aggregate(
-  environment_index ~ Q7.2,
+  umfeldreaktion ~ Q7.2,
   data = gender,
   FUN = function(x) c(
     Median = median(x, na.rm = TRUE),
