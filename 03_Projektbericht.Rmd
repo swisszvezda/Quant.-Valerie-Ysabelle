@@ -1,5 +1,5 @@
 ---
-title: "Arbeitstitel TBD"
+title: "Zwischen Gesellschaft und sozialem Umfeld: Einflussfaktoren der Gründungsintention bei Studierenden"
 output: html_document
 date: "2025-12-19"
 author: "Valérie S. & Ysabelle M."
@@ -10,40 +10,94 @@ csl: apa.csl
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Test Überschrift
+## Einleitung
 
-Das ist ein **Test-Text**, der inhaltlich nichts aussagt und nur als *Platzhalter* dient, um die unterschiedlichen Textformatierungen auszuprobieren. Es gibt folgende Möglichkeiten:
+Hier kommt die Einleitung hin:
 
-- # = Überschriften (Grösse variiert mit Anzahl)
-- *kursiv* , **fett**, ***fett kursiv***
-- Ungeordnete Listen: - Text
-- Geordnete Listen: 1. Text
-- [Linktext](https://example.com)
-- ![Beschreibung](bild.png)
+- Thema (Unternehmertum bei Studierenden und Einflüsse auf die Gründungsabsichten)
+- Kontext (Guesss Studie) -> evtl. Dokument verlinken? 
+- Warum ist das Thema relevant (für diese Untersuchung)?
 
-Meine Lieblingsessen in Reihenfolge:
 
-1. Bratwurst mit Pommes & Zwiebelsauce
-2. Lasagne
-3. Gyros
-4. Crepe -> [Was sind eigentlich Crepes](https://de.wikipedia.org/wiki/Cr%C3%AApe)
+## Forschungsfrage
 
-![So sieht eine leckere Crepe aus](Bilder/testbild_crepes.png)
+In dieser Untersuchung haben wir folgende Fragestellung verfolgt:  
+**Welche Rolle spielt die** ***(1) individuelle Wahrnehmung gesellschaftlicher Strukturen*** **und die** ***(2) erwartete Reaktion des persönlichen Umfelds*** **in der** ***Gründungsintention*** **von** ***weiblichen und männlichen Studierenden?***
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Hier folgt eine kurze Begründung zur Auswahl der Fragestellung.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
-```
+## Daten & Variablen
 
-## Including Plots
+Zur Beantwortung der Forschungsfrage wurden folgende Variablen aus dem GUESSS-Datensatz verwendet:<br>Q7.2, Q4.1.1_2, Q6.1.1_1, Q6.1.2_1, Q6.1.3_1, Q6.2_1, Q6.2_2, Q6.2_3<br><br>
+**Geschlecht**  
+Das Geschlecht der Befragten (Q7.2) wurde als Gruppierungsvariable verwendet, um Unterschiede zwischen weiblichen und männlichen Studierenden zu untersuchen.  
 
-You can also embed plots, for example:
+**Gründungsabsicht**  
+Die Stärke der Gründungsabsicht der Studierenden wurde mit dem Item „Mein professionelles Ziel ist es, Entrepreneur zu werden“ (Q4.1.1_2) erfasst. Die Antwort erfolgte auf einer 7-stufigen Likert-Skala von 1 (stimme überhaupt nicht zu) bis 7 (stimme voll zu). Höhere Werte zeigen eine stärkere Gründungsabsicht an.  
+*➝ abhängige Variable  *
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+**Wahrnehmung gesellschaftlicher Strukturen**  
+Die individuelle Wahrnehmung gesellschaftlicher Macht- und Autoritätsstrukturen wurde mithilfe von drei Items erfasst. Diese beziehen sich darauf,\
+(1) ob gesellschaftlicher Einfluss eher auf individuellen Fähigkeiten und Beiträgen oder auf formalen Positionen basiert (Q6.1.1_1),\
+(2) inwieweit das Hinterfragen von Autoritäten als akzeptiert gilt (Q6.1.2_1), sowie\
+(3) ob Macht in der Gesellschaft als breit verteilt oder stark konzentriert wahrgenommen wird. (Q6.1.3_1)\
+Alle Items wurden auf einer 7-stufigen Skala erhoben. Die drei Items wurden zu einer Skala zusammengefasst, indem der Mittelwert gebildet wurde (aus den Einzelitems). Höhere Werte stehen für eine stärker egalitär wahrgenommene Gesellschaftsstruktur.  
+*➝ unabhängige Variable  *
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+**Erwartete Reaktion des persönlichen Umfelds**  
+Die erwartete Reaktion des persönlichen Umfelds auf eine mögliche unternehmerische Tätigkeit wurde anhand der Einschätzung der Reaktionen von Familie (Q6.2_1), Freunden (Q6.2_2) und Mitstudierenden (Q6.2_3) gemessen. Die Befragten gaben auf einer 7-stufigen Skala von 1 (sehr negativ) bis 7 (sehr positiv) an, wie sie die Reaktionen ihres Umfelds einschätzen würden. Die drei Items wurden zu einer Skala zusammengefasst, wobei höhere Werte eine positivere erwartete Reaktion des Umfelds anzeigen.  
+*➝ unabhängige Variable  *
+
+
+## Deskriptive Statistik
+
+Hier folgende der Abschnitt:
+
+- Kennwerte (Mittelwerte, Median, SD)
+- Grafiken
+- Kurze Interpretation (was fällt auf? was lässt sich aus der Grafik herauslesen? Z.B. Signifikanz)
+
+
+## Gruppenvergleiche der Variablen
+
+Hier folgt der Abschnitt:
+
+- T-Test
+- Wilcoxon-Test
+- Interpretation der Ergebnisse
+
+
+## Beziehungen zwischen den Variablen
+
+Hier folgt der Abschnitt:
+
+- Zusammenhänge zwischen: Umfeldreaktion vs. Gründungsabsicht, Gesellschaftswahrnehmung vs. Gründungsabsicht, Vergleich dieser Einflüsse bei Mann vs. Frau
+- Interpretation
+
+
+## Diskussion
+
+Hier folgt der Abschnitt:
+
+- Beantwortung der Forschungsfrage 
+- Einordnung der Ergebnisse (z.B. warum keine signifikanten Unterschiede?)
+
+
+## Reflexion & Limitationen
+
+Hier folgt der Abschnitt:
+
+- Stichprobe (Studierende)
+- Subjektive Einschätzung
+- Keine Kausalität
+
+
+## Fazit
+
+Hier folgt der Abschnitt:
+
+- 2-3 Abschlusssätze
+- Was haben wir gelernt?
+
