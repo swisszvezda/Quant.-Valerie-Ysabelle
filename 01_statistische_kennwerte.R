@@ -1,3 +1,5 @@
+#ÜBUNGEN
+
 mean(guess$Q2.1_1, na.rm = TRUE)
 
 median(guess$Q2.1_1, na.rm = TRUE)
@@ -85,7 +87,7 @@ sd(guess$umfeldreaktion, na.rm = TRUE)
 guess$geschlecht <- factor(
   guess$Q7.2,
   levels = c(0, 1),
-  labels = c("Frau", "Mann")
+  labels = c("Mann", "Frau")
 )
 table(guess$geschlecht) #Häufigkeit anzeigen
 prop.table(table(guess$geschlecht)) * 100  #Prozentangaben berechnen
