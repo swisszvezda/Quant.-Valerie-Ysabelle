@@ -77,22 +77,20 @@ Hier folgt der Abschnitt:
 - Interpretation
 
 
-## Diskussion
+## Diskussion & Reflexion der Ergebnisse und Vorgehen
 
 Hier folgt der Abschnitt:
 
 - Beantwortung der Forschungsfrage 
 - Einordnung der Ergebnisse (z.B. warum keine signifikanten Unterschiede?)
-
-
-## Reflexion & Limitationen
-
-Hier folgt der Abschnitt:
-
 - Stichprobe (Studierende)
 - Subjektive Einschätzung
 - Keine Kausalität
 
+
+## Reflexion KI
+
+Hier folgt der Abschnitt.
 
 ## Fazit
 
